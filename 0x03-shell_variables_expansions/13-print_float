@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -ne $NUM | grep -Po "\d+[.]\d{2}"
+echo -ne $NUM"\n" | grep -Po "\d+[.]\d{2}"
