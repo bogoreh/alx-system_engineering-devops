@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -ne $NUM"\n" | grep -Po "\d+[.]\d{2}"
+printf "%.2f \n" $NUM
