@@ -30,6 +30,11 @@ Bash script that displays `Best School` 10 times using the until loop.
 
 File: [3-until_best_school](./3-until_best_school)
 
+### 4. If 9, say Hi!
+ Bash script that displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line.
+
+File: [4-if_9_say_hi](./4-if_9_say_hi)
+
 ## More Info
 ### Shellcheck
 Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. `Shellcheck` is your friend! Here is how to [install it](https://github.com/koalaman/shellcheck#installing).
