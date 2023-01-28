@@ -35,6 +35,11 @@ File: [3-until_best_school](./3-until_best_school)
 
 File: [4-if_9_say_hi](./4-if_9_say_hi)
 
+### 5. 4 bad luck, 8 is your chance
+Bash script that loops from 1 to 10 and: displays bad luck for the 4th loop iteration, displays good luck for the 8th loop iteration, displays Best School for the other iterations.
+
+FIle: [5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance)
+
 ## More Info
 ### Shellcheck
 Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. `Shellcheck` is your friend! Here is how to [install it](https://github.com/koalaman/shellcheck#installing).
