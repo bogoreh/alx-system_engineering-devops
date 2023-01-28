@@ -55,6 +55,11 @@ Bash script that displays: The content of the current directory, In a list forma
 
 File: [8-for_ls](./8-for_ls)
 
+### 9. To file, or not to file
+Bash script that gives you information about the school file.
+
+File: [9-to_file_or_not_to_file](./9-to_file_or_not_to_file)
+
 ## More Info
 ### Shellcheck
 Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. `Shellcheck` is your friend! Here is how to [install it](https://github.com/koalaman/shellcheck#installing).
