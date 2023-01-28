@@ -50,6 +50,11 @@ Bash script that displays the time for 12 hours and 59 minutes: display hours fr
 
 File: [7-clock](./7-clock)
 
+### 8. For ls
+Bash script that displays: The content of the current directory, In a list format.
+
+File: [8-for_ls](./8-for_ls)
+
 ## More Info
 ### Shellcheck
 Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. `Shellcheck` is your friend! Here is how to [install it](https://github.com/koalaman/shellcheck#installing).
