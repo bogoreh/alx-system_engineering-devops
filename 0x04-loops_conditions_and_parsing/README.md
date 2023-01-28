@@ -16,8 +16,20 @@ man: `ssh-keygen`
 File: [0-RSA_public_key.pub](./0-RSA_public_key.pub)
 
 ### 1. For Best School loop
-Bash script that displays `Best School` 10 times.
+Bash script that displays `Best School` 10 times using the for loop.
 
 File: [1-for_best_school](./1-for_best_school)
 
 ### 2. While Best School loop
+Bash script that displays `Best School` 10 times using the while loop.
+
+File: [2-while_best_school](./2-while_best_school)
+
+### 3. Until Best School loop
+Bash script that displays `Best School` 10 times using the until loop.
+
+File: [3-until_best_school](./3-until_best_school)
+
+## More Info
+### Shellcheck
+Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. `Shellcheck` is your friend! Here is how to [install it](https://github.com/koalaman/shellcheck#installing).
