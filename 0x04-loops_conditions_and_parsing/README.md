@@ -45,6 +45,11 @@ Bash script that displays numbers from 1 to 20 and: displays `4` and then `bad l
 
 File: [6-superstitious_numbers](./6-superstitious_numbers)
 
+### 7. Clock
+Bash script that displays the time for 12 hours and 59 minutes: display hours from 0 to 12, display minutes from 1 to 59
+
+File: [7-clock](./7-clock)
+
 ## More Info
 ### Shellcheck
 Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. `Shellcheck` is your friend! Here is how to [install it](https://github.com/koalaman/shellcheck#installing).

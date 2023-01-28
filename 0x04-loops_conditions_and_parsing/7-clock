@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times using the while loop except for the 9th iteration where it prints "Hi"
+HOUR=0
+while ((HOUR < 13))
+do
+	echo "Hour: $((HOUR++))"
+	MINUTE=1
+	while ((MINUTE < 60))
+	do
+		echo "$((MINUTE++))"
+	done
+done
