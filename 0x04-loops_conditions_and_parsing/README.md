@@ -16,3 +16,8 @@ man: `ssh-keygen`
 File: [0-RSA_public_key.pub](./0-RSA_public_key.pub)
 
 ### 1. For Best School loop
+Bash script that displays `Best School` 10 times.
+
+File: [1-for_best_school](./1-for_best_school)
+
+### 2. While Best School loop
