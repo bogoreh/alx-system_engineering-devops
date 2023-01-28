@@ -84,13 +84,13 @@ File: [101-tell_the_story_of_passwd](./101-tell_the_story_of_passwd)
 
 ### 13. Let's parse Apache logs
 
-Apache is among the most popular web servers in the world, serving 50% of all active websites, no doubt that you will have to interact with it within your career.
+[Apache](https://en.wikipedia.org/wiki/Apache_HTTP_Server) is among the most popular web servers in the world, serving 50% of all active websites, no doubt that you will have to interact with it within your career.
 
-As a Full-Stack Software Engineer, you have to master the art of parsing log files. Today we will do a simple parsing of Apache log access files.
+As a Full-Stack Software Engineer, you have to master the art of parsing log files. Today we will do a simple parsing of [Apache log access files](./apache-access.log).
 
 Today the Customer Support department reported that a user reported that the site is being “buggy”. Not being a detailed description, you want to have a look at the Apache logs and gather data about the traffic.
 
-Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
+Write a Bash script that displays the visitor IP along with the [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) from the Apache log file.
 
 File: [102-lets_parse_apache_logs](./102-lets_parse_apache_logs)
 
