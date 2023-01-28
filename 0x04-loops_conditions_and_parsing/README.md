@@ -65,6 +65,41 @@ Bash script that displays numbers from 1 to 100. Displays `FizzBuzz` when the nu
 
 File: [10-fizzbuzz](./10-fizzbuzz)
 
+### 11. Read and cut
+Bash script that displays the content of the file /etc/passwd.
+
+File: [100-read_and_cut](./100-read_and_cut)
+
+### 12. Tell the story of passwd
+
+Read:
+* [IFS(internal field separator)](https://tldp.org/LDP/abs/html/internalvariables.html)
+* [Understanding /etc/passwd](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/)
+
+Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
+
+Format: `The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO`
+
+File: [101-tell_the_story_of_passwd](./101-tell_the_story_of_passwd)
+
+### 13. Let's parse Apache logs
+
+Apache is among the most popular web servers in the world, serving 50% of all active websites, no doubt that you will have to interact with it within your career.
+
+As a Full-Stack Software Engineer, you have to master the art of parsing log files. Today we will do a simple parsing of Apache log access files.
+
+Today the Customer Support department reported that a user reported that the site is being “buggy”. Not being a detailed description, you want to have a look at the Apache logs and gather data about the traffic.
+
+Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
+
+File: [102-lets_parse_apache_logs](./102-lets_parse_apache_logs)
+
+### 14. Dig the data
+Now that you’ve parsed the Apache log file, let’s sort the data so you can get a better idea of what is going on.
+
+Using what you did in the previous exercise, write a Bash script that groups visitors by IP and HTTP status code, and displays this data.
+
+File: [103-dig_the-data](./103-dig_the-data)
 
 ## More Info
 ### Shellcheck
