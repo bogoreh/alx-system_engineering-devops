@@ -60,6 +60,12 @@ Bash script that gives you information about the school file.
 
 File: [9-to_file_or_not_to_file](./9-to_file_or_not_to_file)
 
+### 10.FizzBuzz
+Bash script that displays numbers from 1 to 100. Displays `FizzBuzz` when the number is a multiple of 3 and 5, Displays `Fizz` when the number is multiple of 3, Displays `Buzz` when the number is a multiple of 5, Otherwise, displays the number in a list format
+
+File: [10-fizzbuzz](./10-fizzbuzz)
+
+
 ## More Info
 ### Shellcheck
 Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. `Shellcheck` is your friend! Here is how to [install it](https://github.com/koalaman/shellcheck#installing).
