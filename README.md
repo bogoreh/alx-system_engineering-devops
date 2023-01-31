@@ -7,3 +7,4 @@
 * init files, variables and expansions [0x03-shell_variables_expansions](./0x03-shell_variables_expansions)
 * Loops, conditions and parsing -> [0x04-loops_conditions_and_parsing](./0x04-loops_conditions_and_parsing)
 * Processes and signals -> [0x05-processes_and_signals](./0x05-processes_and_signals)
+* Regular expression -> [0x06-regular_expressions](./0x06-regular_expressions)
