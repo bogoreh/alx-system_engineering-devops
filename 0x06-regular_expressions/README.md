@@ -83,6 +83,8 @@ Requirement:
 
 File: [6-phone_number.rb](./6-phone_number.rb)
 
+***
+
 ### 7. OMG WHY ARE YOU SHOUTING?
 ![task7](https://intranet.alxswe.com/images/contents/sysadmin/projects/78/shouting.jpg)
 Requirement:
@@ -90,7 +92,9 @@ Requirement:
 
 File: [7-OMG_WHY_ARE_YOU_SHOUTING.rb](./7-OMG_WHY_ARE_YOU_SHOUTING.rb)
 
-### Textme
+***
+
+### 8. Textme
 
 This exercise was prepared for you by Guillaume Plessis, VP of Infrastructure at TextMe. It is something he uses daily. You can thank Guillaume for his project on [Twitter](https://twitter.com/gui).
 
