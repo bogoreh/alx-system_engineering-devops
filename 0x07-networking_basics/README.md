@@ -1,5 +1,6 @@
 # Networking basics #0
 ## Resources
+### Read or watch
 * [OSI model](https://en.wikipedia.org/wiki/OSI_model)
 * [Types of networks](https://www.lifewire.com/lans-wans-and-other-area-networks-817376)
 * [Internet](https://en.wikipedia.org/wiki/Internet)
@@ -9,6 +10,9 @@
 * [TCP/UDP ports list](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
 * [What is ping/ICMP](https://en.wikipedia.org/wiki/Ping_%28networking_utility%29)
 * [Positional arguments](https://wiki.bash-hackers.org/scripting/posparams)
+### man or help
+* `netstat`
+* `ping`
 
 ## Tasks
 ### 0. OSI model
