@@ -9,4 +9,4 @@
 * Processes and signals -> [0x05-processes_and_signals](./0x05-processes_and_signals)
 * Regular expression -> [0x06-regular_expressions](./0x06-regular_expressions)
 * Networking basics #0 -> [0x07-networking_basics](./0x07-networking_basics)
-* Networking basics #1 -> [0xx08-networking_basics_2](./0xx08-networking_basics_2)
+* Networking basics #1 -> [0x08-networking_basics_2](./0x08-networking_basics_2)
