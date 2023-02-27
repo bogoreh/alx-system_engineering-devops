@@ -8,5 +8,8 @@
 * Loops, conditions and parsing -> [0x04-loops_conditions_and_parsing](./0x04-loops_conditions_and_parsing)
 * Processes and signals -> [0x05-processes_and_signals](./0x05-processes_and_signals)
 * Regular expression -> [0x06-regular_expressions](./0x06-regular_expressions)
+
+## Web infrastructure
 * Networking basics #0 -> [0x07-networking_basics](./0x07-networking_basics)
 * Networking basics #1 -> [0x08-networking_basics_2](./0x08-networking_basics_2)
+* Web infrastructure design -> [0x09-web_infrastructure_design](./0x09-web_infrastructure_design)
