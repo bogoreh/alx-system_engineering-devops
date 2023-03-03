@@ -107,7 +107,7 @@ Nagios is an open source project started in 1999, it is among the most widely us
 Wavefront is a cutting edge monitoring service funded by great software engineers who’ve built monitoring tools for the best tech companies in Silicon Valley. The idea is to be able to analyze anything that can produce data points. A query language that looks like SQL allows users to apply mathematical operations to these data points to extract values or detect anomalies from the time series data. While it takes some time to get used to the tool, it’s the type of monitoring that the best companies are using. To my knowledge, LinkedIn, Facebook and DropBox are using a very similar tool for their monitoring needs.
 
 ***
-
+## More Resources
 * [What is a database](https://www.oracle.com/ke/database/what-is-database/)
 * [What’s the difference between a web server and an app server?](https://www.infoworld.com/article/2077354/app-server-web-server-what-s-the-difference.html)
 * [DNS record types](https://www.site24x7.com/learn/dns-record-types.html)
