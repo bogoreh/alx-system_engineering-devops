@@ -15,6 +15,7 @@
 ## Networking
 * Networking basics #0 -> [0x07-networking_basics](./0x07-networking_basics)
 * Networking basics #1 -> [0x08-networking_basics_2](./0x08-networking_basics_2)
+* SSH -> [0x0B-ssh](./0x0B-ssh)
 
 ## Web stack
 * Web infrastructure design -> [0x09-web_infrastructure_design](./0x09-web_infrastructure_design)
