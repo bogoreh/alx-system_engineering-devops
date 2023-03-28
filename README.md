@@ -19,3 +19,4 @@
 
 ## Web stack
 * Web infrastructure design -> [0x09-web_infrastructure_design](./0x09-web_infrastructure_design)
+* Web server -> [0x0C-web_server](./0x0C-web_server)
