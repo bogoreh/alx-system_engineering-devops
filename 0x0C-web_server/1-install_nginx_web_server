@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # script installs nginx on web server
 
-sudo apt update
+sudo apt -y update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 sudo ufw enable
