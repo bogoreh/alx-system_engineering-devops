@@ -6,9 +6,9 @@ sudo ufw allow 'Nginx HTTP'
 sudo ufw enable
 echo "Hello World!" | sudo tee '/var/www/html/redirect_me.html'  > /dev/null
 if [ "$(pgrep -c nginx)" -le 0 ]; then
-	service nginx start
+	sudo service nginx start
 else
-	service nginx restart
+	sudo service nginx restart
 fi
 new_string="server_name alphaziro.tech;\nreturn 301  https://www.youtube.com/watch?v=QH2-TGUlwu4/;"
-sed -i "s/server_name _;/$new_string/" /etc/nginx/sites-available/default
+sed -i "s/server_name _;/$new_string/g" /etc/nginx/sites-available/default
