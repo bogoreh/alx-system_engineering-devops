@@ -5,8 +5,9 @@ package { 'nginx':
 }
 
 file { 'Hello World!':
-	 ensure  => '/var/www/html/index.nginx-debian.html',
-	 content => 'Hello World!',
+  ensure  => file,
+  path    => '/var/www/html/index.nginx-debian.html',
+  content => 'Hello World!',
 }
 
 file_line { 'Hello World!':
