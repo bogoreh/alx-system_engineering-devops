@@ -10,5 +10,5 @@ if [ "$(pgrep -c nginx)" -le 0 ]; then
 else
 	sudo service nginx restart
 fi
-new_string="server_name alphaziro.tech;\nreturn 301  https://www.youtube.com/watch?v=QH2-TGUlwu4/;"
-sudo sed -i "s|server_name _;|$new_string|g" /etc/nginx/sites-available/default
+new_string="location / {/nRedirect 301 / https://www.youtube.com/watch?v=QH2-TGUlwu4/;"
+sudo sed -i "s|location / {|$new_string|g" /etc/nginx/sites-available/default
