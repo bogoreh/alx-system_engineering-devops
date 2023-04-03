@@ -10,14 +10,22 @@
 
 ## Scripting
 * Regular expression -> [0x06-regular_expressions](./0x06-regular_expressions)
-* Configuration management -> [0x0A-configuration_management](./0x0A-configuration_management)
 
 ## Networking
 * Networking basics #0 -> [0x07-networking_basics](./0x07-networking_basics)
 * Networking basics #1 -> [0x08-networking_basics_2](./0x08-networking_basics_2)
-* SSH -> [0x0B-ssh](./0x0B-ssh)
+
+## CI/CD
+* Configuration management -> [0x0A-configuration_management](./0x0A-configuration_management)
 
 ## Web stack
 * Web infrastructure design -> [0x09-web_infrastructure_design](./0x09-web_infrastructure_design)
 * Web server -> [0x0C-web_server](./0x0C-web_server)
+* Load balancer -> [0x0F-load_balancer](./0x0F-load_balancer)
+
+## Security
+* SSH -> [0x0B-ssh](./0x0B-ssh)
+
+## Web stack debugging
 * Web stack debugging #0 -> [0x0D-web_stack_debugging_0](./0x0D-web_stack_debugging_0)
+* Web stack debugging #1 -> [0x0D-web_stack_debugging_1](./0x0D-web_stack_debugging_1)
