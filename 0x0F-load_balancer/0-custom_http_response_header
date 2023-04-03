@@ -13,7 +13,7 @@ sudo ufw enable
 
 # modify default pages
 echo "Hello World!" | sudo tee '/var/www/html/index.nginx-debian.html'  > /dev/null
-echo "Ceci n'est pas une page" > /usr/share/nginx/html/custom_404.html
+echo "Not found" > /usr/share/nginx/html/custom_404.html
 
 # setup custom header on web server
 sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/www.buliro.net permanent;\n\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}/" /etc/nginx/sites-available/default
