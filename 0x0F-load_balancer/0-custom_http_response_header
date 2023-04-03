@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# uncomment to see the script run in action
-
+# setup nginx with custom pages and modified headers
 # colors
 green='\e[1;32m'
 yellow='\e[1;33;1;40m'
