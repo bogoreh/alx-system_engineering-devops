@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Spawn an Apache server where the root directory displays 'Hello Holberton'
+service apache2 start
