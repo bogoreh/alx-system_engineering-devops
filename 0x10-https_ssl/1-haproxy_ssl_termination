@@ -1,0 +1,23 @@
+global
+    log   /dev/log local0
+	stats socket   /run/haproxy/admin.sock mode 660 level admin
+
+defaults
+    log     global
+    mode    http
+    option  httplog
+	timeout connect 5s
+	timeout client  5s
+	timeout server  5s
+
+frontend web-frontend
+	bind *:80
+	bind *:443 ssl crt /etc/haproxy/certs/alphaziro.tech.pem
+	http-request redirect scheme https unless { ssl_fc }
+	http-request set-header X-Forwarded-Proto https
+	default_backend web-backend
+
+backend web-backend
+	balance roundrobin
+	server 100910-web-01 34.204.95.189:80 check
+	server 100910-web-02 54.236.44.63:80 check
