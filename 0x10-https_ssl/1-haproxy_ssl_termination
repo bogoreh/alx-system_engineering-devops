@@ -1,6 +1,6 @@
 global
     log     /dev/log local0
-    maxconn 2048
+    maxconn 1000
     user    haproxy
     group   haproxy
     tune.ssl.default-dh-param 2048
@@ -8,22 +8,22 @@ global
 defaults
     log     global
     mode    http
+    option  forwardfor
     option  httplog
     option  dontlognull
+    timeout connect  5000
+    timeout client  50000
+    timeout server  50000
     retries 3
     option  redispatch
-    timeout connect  5s
-    timeout client  10s
-    timeout server  10s
-    option  forwardfor
 
 frontend www-http
-   bind   0.0.0.0:80
+   bind   *:80
    reqadd X-Forwarded-Proto:\ http
    default_backend www-backend
 
 frontend www-https
-   bind   0.0.0.0:443 ssl crt /etc/letsencrypt/live/www.alphaziro.tech/all.pem
+   bind   0.0.0.0:443 ssl crt /etc/letsencrypt/live/alphaziro.tech/fullchain.pem
    reqadd X-Forwarded-Proto:\ https
    acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
    use_backend letsencrypt-backend if letsencrypt-acl
@@ -32,8 +32,8 @@ frontend www-https
 backend www-backend
    balance  roundrobin
    redirect scheme https if !{ ssl_fc }
-   server 100910-web-01 3.235.75.142:80 check
-   server 100910-web-02 100.25.15.155:80 check
+   server 100910-web-01 100.24.74.255:80 check
+   server 100910-web-02 52.86.146.141:80 check
 
 backend letsencrypt-backend
    server letsencrypt 127.0.0.1:71417
