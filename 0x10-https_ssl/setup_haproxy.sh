@@ -45,18 +45,21 @@ defaults
     option  httplog
     option  dontlognull
     timeout connect  5000
-    timeout client  50000
-    timeout server  50000
+    timeout client  10000
+    timeout server  10000
     retries 3
     option  redispatch
+    option  http-server-close
 
 frontend www-http
-   bind   *:80
-   reqadd X-Forwarded-Proto:\ http
-   default_backend www-backend
+    bind   *:80
+    reqadd X-Forwarded-Proto:\ http
+    default_backend www-backend
+    redirect scheme https code 301 if !{ ssl_fc }
+
 
 frontend www-https
-   bind   0.0.0.0:443 ssl crt /etc/letsencrypt/live/alphaziro.tech/fullchain.pem
+   bind   *:443 ssl crt /etc/letsencrypt/live/www.alphaziro.tech/fullchain.pem
    reqadd X-Forwarded-Proto:\ https
    acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
    use_backend letsencrypt-backend if letsencrypt-acl
