@@ -26,6 +26,7 @@
 ## Security
 * SSH -> [0x0B-ssh](./0x0B-ssh)
 * HTTPS SSL -> [0x10-https_ssl](./0x10-https_ssl)
+* Firewall -> [0x13-firewall](./0x13-firewall)
 
 ## Web stack debugging
 * Web stack debugging #0 -> [0x0D-web_stack_debugging_0](./0x0D-web_stack_debugging_0)

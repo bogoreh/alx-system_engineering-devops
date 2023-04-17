@@ -24,8 +24,6 @@ bash -c "echo -e '$INDEX' | sudo tee '/data/web_static/releases/test/index.html'
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
 sudo chown -hR ubuntu:ubuntu /data/
 
-cp /etc/nginx/sites-available/default ./nginx_sites-available_default.backup
-
 SERVER_CONFIG=\
 "# Custom server configuration
 server {
@@ -50,8 +48,7 @@ server {
         }
 }"
 
-bash -c "echo -e '$SERVER_CONFIG' | sudo tee '/etc/nginx/sites-available/alphaziro.tech' > /dev/null"
-#sudo service nginx restart
+bash -c "echo -e '$SERVER_CONFIG' | sudo tee '/etc/nginx/sites-enabled/alphaziro.tech' > /dev/null"
 
 # sets up ssl
 sudo apt update

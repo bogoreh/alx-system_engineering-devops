@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Spawn an Apache server where the root directory displays 'Hello Holberton'
+echo "Hello Holberton" >> /etc/apache2.conf
 service apache2 start
