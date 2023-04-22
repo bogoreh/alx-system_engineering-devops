@@ -83,7 +83,7 @@ sudo certbot --nginx -d alphaziro.tech -d www.alphaziro.tech
 # test the renewal process
 sudo certbot renew --dry-run
 
-echo -e "${green}Finished setting up SSL${reset}\n"
+echo -e "${green}Finished setting up SSL${reset}\nDone"
 
 sudo ufw status
 

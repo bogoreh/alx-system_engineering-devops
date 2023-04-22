@@ -26,6 +26,8 @@ install haproxy
 
 echo -e "${green}Finished installing ${yellow}$1${reset}\n"
 
+echo -e "${blue}Setting up HAproxy...${reset}\n"
+
 sudo cp /etc/haproxy/haproxy.cfg haproxy_cfg.backup
 
 server_config=\
@@ -82,3 +84,4 @@ echo "$server_config" | sudo tee '/etc/haproxy/haproxy.cfg' > /dev/null
 echo "ENABLED=1" | sudo tee '/etc/default/haproxy' > /dev/null
 
 sudo service haproxy restart
+echo -e "${blue}Finished setting up HAproxy.${reset}\nDone"
