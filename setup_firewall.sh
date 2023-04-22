@@ -25,15 +25,15 @@ function install() {
 	fi
 }
 
-install ufw
-
 echo -e "${green}Finished installing ${yellow}$1${reset}\n"
 
-echo -e "${blue}Setting up ${yellow}$1...${reset}\n"
+install ufw
+
+echo -e "${blue}Setting up firewall${reset}\n"
 sudo ufw default allow outgoing
 sudo ufw default deny incoming
 sudo ufw allow 22/tcp
 sudo ufw allow 443/tcp
 sudo ufw allow 80/tcp
 sudo ufw enable
-echo -e "${green}Finished setting up ${yellow}$1.${reset}\nDone"
+echo -e "${green}Finished setting up firewall.${reset}\n\n${blue}Done${reset}"
