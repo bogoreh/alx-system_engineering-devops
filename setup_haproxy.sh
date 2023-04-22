@@ -22,7 +22,7 @@ function install() {
 	fi
 }
 
-install haproxy #install haproxy
+install haproxy
 
 echo -e "${green}Finished installing ${yellow}$1${reset}\n"
 
@@ -81,4 +81,4 @@ echo "$server_config" | sudo tee '/etc/haproxy/haproxy.cfg' > /dev/null
 #echo "ENABLED=1" | sudo dd status=none of=/etc/default/haproxy
 echo "ENABLED=1" | sudo tee '/etc/default/haproxy' > /dev/null
 
-#sudo service haproxy restart
+sudo service haproxy restart

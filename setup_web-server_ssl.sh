@@ -75,7 +75,7 @@ install python3-certbot-nginx
 echo -e "${blue}Updating firewall...${reset}\n"
 sudo ufw allow 'Nginx Full'
 sudo ufw delete allow 'Nginx HTTP'
-sudo ufw enable
+sudo ufw reload
 echo -e "${green}Finished updating firewall${reset}\n"
 
 sudo certbot --nginx -d alphaziro.tech -d www.alphaziro.tech
