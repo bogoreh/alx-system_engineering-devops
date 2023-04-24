@@ -7,9 +7,9 @@ returns information about his/her TODO list progress,
 and export data in the JSON format
 """
 
+import json
 import requests
 from sys import argv
-import json
 
 if __name__ == "__main__":
     if len(argv) == 2:

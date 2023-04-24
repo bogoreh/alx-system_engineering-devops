@@ -5,8 +5,8 @@ Module 3-dictionary_of_list_of_dictionaries
 Returns information about users TODO lists, and exports data in JSON format
 """
 
-import requests
 import json
+import requests
 
 if __name__ == "__main__":
     SRC = 'https://jsonplaceholder.typicode.com/'
