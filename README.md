@@ -10,6 +10,7 @@
 
 ## Scripting
 * Regular expression -> [0x06-regular_expressions](./0x06-regular_expressions)
+* API -> [0x15-api](./0x15-api)
 
 ## Networking
 * Networking basics #0 -> [0x07-networking_basics](./0x07-networking_basics)
