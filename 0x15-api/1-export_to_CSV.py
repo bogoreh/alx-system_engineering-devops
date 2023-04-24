@@ -16,12 +16,9 @@ if __name__ == "__main__":
         id = int(argv[1])
         res_user = requests.get('{}users/{}'.format(SRC, id)).json()
         res_todos = requests.get('{}todos?userId={}'.format(SRC, id)).json()
-        name = res_user.get('name')
+        name = res_user.get('username')
         todos = list(res_todos)
         with open('{}.csv'.format(id), 'w') as file:
             for todo in todos:
                 file.write('"{}","{}","{}","{}"\n'.format(
-                    id,
-                    name,
-                    todo.get('completed'),
-                    todo.get('title')))
+                    id, name, todo.get('completed'), todo.get('title')))
