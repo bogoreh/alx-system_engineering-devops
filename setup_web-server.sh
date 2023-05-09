@@ -35,10 +35,11 @@ INDEX=\
   <head>
   </head>
   <body>
-    Hello World!
+    <h1>This is ALX SE!</h1>
   </body>
 </html>"
 echo -e "$INDEX" | sudo tee "/data/web_static/releases/test/index.html" > /dev/null
+
 echo "Ceci n'est pas une page" | sudo tee "/var/www/html/404.html"  > /dev/null
 
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
@@ -50,23 +51,28 @@ server {
         listen 80 default_server;
         listen [::]:80 default_server;
         add_header X-Served-By $HOSTNAME;
+
         root /var/www/html;
         index index.html index.htm;
 
-        server_name alphaziro.tech www.alphaziro.tech;
+        server_name alphaziro.tech www.alphaziro.tech *.alphaziro.tech;
 
-        location /hbnb_static/ {
+        location / {
+				root /data/web_static/current/;
+                index index.html index.htm;
+				try_files \$uri \$uri/index.html \$uri.html =404;
+        }
+		
+		location /hbnb_static/ {
                 alias /data/web_static/current/;
         }
 
 		error_page 404 /404.html;
 		error_page 500 502 503 504 /50x.html;
 }"
+bash -c "echo -e '$SERVER_CONFIG' | sudo tee '/etc/nginx/sites-available/default' > /dev/null"
 
-sudo mkdir -p -m=755 /etc/nginx/sites-enabled && sudo touch /etc/nginx/sites-enabled/alphaziro.tech
-echo -e "$SERVER_CONFIG" | sudo tee "/etc/nginx/sites-enabled/alphaziro.tech" > /dev/null
-
-sudo ln -sf /etc/nginx/sites-enabled/alphaziro.tech /etc/nginx/sites-enabled/default
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 
 if [ "$(pgrep -c nginx)" -le 0 ]; then
 	sudo service nginx start
