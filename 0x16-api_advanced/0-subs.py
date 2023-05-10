@@ -16,6 +16,6 @@ def number_of_subscribers(subreddit):
                        format(URL, subreddit),
                        headers={'User-Agent': 'ALX-User-Agent'},
                        allow_redirects=False)
-    if res.status_code >= 300:
+    if res.status_code != 200:
         return 0
     return res.json().get('data').get('subscribers')

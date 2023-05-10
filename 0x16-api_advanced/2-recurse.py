@@ -12,23 +12,20 @@ def recurse(subreddit, hot_list=[], count=0, after=None):
         None if an invalid subreddit is given
     """
     URL = 'https://www.reddit.com/r/'
-    res = requests.get('{}{}/hot.json?limit=10'.
-                       format(URL, subreddit),
-                       params={"count": count, "after": after},
+    res = requests.get('{}{}/hot.json'.format(URL, subreddit),
+                       params={'count': count, 'after': after},
                        headers={'User-Agent': 'ALX-User-Agent'},
                        allow_redirects=False)
 
-    if res.status_code >= 400:
+    if res.status_code != 200:
         return None
 
-    list = hot_list + [child.get("data").get("title")
-                       for child in res.json()
-                       .get("data")
-                       .get("children")]
+    list = hot_list + [child.get('data').get('title')
+                       for child in res.json().get('data').get('children')]
 
     data = res.json()
-    if not data.get("data").get("after"):
+    if not data.get('data').get('after'):
         return list
 
-    return recurse(subreddit, list, data.get("data").get("count"),
-                   data.get("data").get("after"))
+    return recurse(subreddit, list, data.get('data').get('count'),
+                   data.get('data').get('after'))

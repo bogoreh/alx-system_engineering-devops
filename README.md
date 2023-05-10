@@ -39,3 +39,5 @@
 ## API
 * API advanced -> [0x16-api_advanced](./0x16-api_advanced)
 
+## Monitoring
+* Webstack monitoring [0x18-webstack_monitoring](./0x18-webstack_monitoring)

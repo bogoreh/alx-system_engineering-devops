@@ -12,12 +12,13 @@ def top_ten(subreddit):
         None if an invalid subreddit is given
     """
     URL = 'https://www.reddit.com/r/'
-    res = requests.get('{}{}/hot.json?limit=10'.
-                       format(URL, subreddit),
+    res = requests.get('{}{}/hot.json?limit=10'.format(URL, subreddit),
                        headers={'User-Agent': 'ALX-User-Agent'},
                        allow_redirects=False)
-    if res.status_code >= 300:
+
+    if res.status_code != 200:
         print('None')
+
     else:
-        [print(child.get("data").get("title"))
+        [print(child.get('data').get('title'))
          for child in res.json().get('data').get('children')]

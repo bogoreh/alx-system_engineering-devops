@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""2-recurse module"""
+"""100-count module"""
 import requests
 
 
-def count_words(subreddit, hot_list=[], count=0, after=None):
+def count_words(subreddit, word_list=[], word_count={}, after=None):
     """
-    Queries the Reddit API
+    Queries the Reddit API recursively
 
     Returns:
         Prints a sorted count of given keywords
@@ -14,19 +14,19 @@ def count_words(subreddit, hot_list=[], count=0, after=None):
     URL = 'https://www.reddit.com/r/'
     res = requests.get('{}{}/hot.json'.
                        format(URL, subreddit),
-                       params={"count": count, "after": after},
+                       params={'after': after},
                        headers={'User-Agent': 'ALX-User-Agent'},
                        allow_redirects=False)
 
-    if res.status_code >= 400:
+    if res.status_code >= 300:
         return None
 
-    list = hot_list + [child.get("data").get("title")
-                        for child in res.json().get("data").get("children")]
+    list = hot_list + [child.get('data').get('title')
+                        for child in res.json().get('data').get('children')]
 
     data = res.json()
-    if not data.get("data").get("after"):
+    if not data.get('data').get('after'):
         return list
 
-    return recurse(subreddit, list, data.get("data").get("count"),
-                   data.get("data").get("after"))
+    return recurse(subreddit, list, data.get('data').get('count'),
+                   data.get('data').get('after'))
