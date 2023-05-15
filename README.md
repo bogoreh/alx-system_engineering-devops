@@ -23,6 +23,7 @@
 * Web infrastructure design -> [0x09-web_infrastructure_design](./0x09-web_infrastructure_design)
 * Web server -> [0x0C-web_server](./0x0C-web_server)
 * Load balancer -> [0x0F-load_balancer](./0x0F-load_balancer)
+* Application server -> [0x1A-application_server](./0x1A-application_server)
 
 ## Security
 * SSH -> [0x0B-ssh](./0x0B-ssh)
