@@ -18,3 +18,4 @@ Now that you have your development environment set up, let’s get your producti
 
 ### 3. Add a route with query parameters
 [3-app_server-nginx_config](./3-app_server-nginx_config) -> 
+
