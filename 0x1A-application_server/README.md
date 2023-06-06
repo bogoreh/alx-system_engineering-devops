@@ -5,3 +5,4 @@
 * [Running Gunicorn](https://docs.gunicorn.org/en/latest/run.html)
 * [Be careful with the way Flask manages slash in route](https://werkzeug.palletsprojects.com/en/0.14.x/routing/) - strict_slashes
 * [Upstart documentation](https://doc.ubuntu-fr.org/upstart)
+* [WSGI](https://www.fullstackpython.com/wsgi-servers.html)
