@@ -43,3 +43,6 @@
 ## Monitoring
 * Webstack monitoring -> [0x18-webstack_monitoring](./0x18-webstack_monitoring)
 * Postmortem -> [0x19-postmortem](./0x19-postmortem)
+
+## Web stack debugging
+* Web stack debugging #4 -> [0x1B-web_stack_debugging_4](./0x1B-web_stack_debugging_4)
