@@ -1,4 +1,9 @@
 # Web stack debugging
+
+## Resources
+* [How to use ApacheBench for web server performance testing](https://www.datadoghq.com/blog/apachebench/)
+* [How To Optimize Nginx Configuration](https://www.digitalocean.com/community/tutorials/how-to-optimize-nginx-configuration)
+
 ## Requirements
 * All your files will be interpreted on Ubuntu 14.04 LTS
 * All your files should end with a new line
